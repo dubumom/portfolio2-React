@@ -56,6 +56,14 @@ function Header() {
     };
   }, []);
 
+  const handleContactClick = (event) => {
+    event.preventDefault();
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.style.left = '0';
+    }
+  };
+
   return (
     <header>
       <h1 className="hidden">우예지의 포트폴리오 입니다.</h1>
@@ -65,7 +73,7 @@ function Header() {
           <li><a href="#project">project</a></li>
           <li><a href="#work">work</a></li>
           <li><a href="#notice">notice</a></li>
-          <li><a href="#contact">contact us</a></li>
+          <li><a href="#contact" onClick={handleContactClick}>contact us</a></li>
         </ul>
       </nav>
       <span className="nav-target"></span>

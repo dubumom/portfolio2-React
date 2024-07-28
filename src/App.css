@@ -166,7 +166,7 @@ body {
 .text-sub2 {color: #2C2C2C;}
 .point {color: var(--point);}
 
-#portfolio, .wheel-animation ,#project, #notice {width: 100%; height: 100vh;}
+#portfolio, .wheel-animation ,#project, #notice, #contact {width: 100%; height: 100vh;}
 
 /* header */
 header {
@@ -620,4 +620,19 @@ figcaption{
     &:nth-child(7) {left:calc(50% + 560px); opacity:0;}
     &:nth-child(8) {left:calc(50% + 700px); opacity:0;}
   }
+}
+
+#contact {
+  background: rgba(0,0,0,0.6);
+  position: fixed;
+  top: 0;
+  left: 100%;
+  z-index: 999999;
+  translate: 0.5s;
+}
+#contact>div{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }

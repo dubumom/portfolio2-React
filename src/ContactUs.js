@@ -19,6 +19,15 @@ export default function ContactUs(): JSX.Element {
         e.target.reset()
     }
 
+
+    const handleContactClick = (event) => {
+        event.preventDefault();
+        const contactSection = document.getElementById('contact');
+        if (contactSection) {
+          contactSection.style.left = '100%';
+        }
+      };
+
     return (
         <React.Fragment>
             <section id="contact">
@@ -70,9 +79,12 @@ export default function ContactUs(): JSX.Element {
                                             name="message"
                                         ></textarea>
 
-                                        <div className="flex items-center md:items-end justify-center md:justify-end">
+                                        <div className="flex items-center md:items-end justify-center md:justify-end gap-3">
                                             <button type="submit" className="bg-blue-500 hover:bg-blue-500 text-white font-semibold py-2 px-4 rounded">
                                                 보내기
+                                            </button>
+                                            <button type="button" className="bg-red-500 hover:bg-blue-500 text-white font-semibold py-2 px-4 rounded" onClick={handleContactClick}>
+                                                닫기
                                             </button>
                                         </div>
                                     </form>

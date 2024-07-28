@@ -7,14 +7,14 @@ export default function ContactUs(): JSX.Element {
     function sendEmail(e: React.ChangeEvent<HTMLFormElement>) {
         e.preventDefault();
 
-        emailjs.sendForm("service_9obblff", "template_99p3p5q", e.currentTarget, "Ai3DC1MEwVueXhdli")
+        emailjs.sendForm(process.env.VITE_YOUR_SERVICE_ID, process.env.VITE_YOUR_TEMPLATE_ID, e.currentTarget, process.env.VITE_YOUR_USER_ID)
             .then((response) => {
                 console.log('SUCCESS!', response.status, response.text);
             }, (err) => {
                 console.log('FAILED...', err);
             });
 
-        alert('메세지를 dong963939@gmail.com으로 전송했습니다.')
+        alert('메세지를 우예지님(alslwjdk@gmail.com)에게 전송했습니다.')
 
         e.target.reset()
     }

@@ -7,7 +7,7 @@ export default function ContactUs(): JSX.Element {
     function sendEmail(e: React.ChangeEvent<HTMLFormElement>) {
         e.preventDefault();
 
-        emailjs.sendForm(import.meta.env.VITE_YOUR_SERVICE_ID, import.meta.env.VITE_YOUR_TEMPLATE_ID, e.currentTarget, import.meta.env.VITE_YOUR_USER_ID)
+        emailjs.sendForm("service_9obblff", "template_99p3p5q", e.currentTarget, "Ai3DC1MEwVueXhdli")
             .then((response) => {
                 console.log('SUCCESS!', response.status, response.text);
             }, (err) => {

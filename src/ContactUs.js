@@ -38,7 +38,7 @@ export default function ContactUs(): JSX.Element {
                             <div className="max-w-md mx-auto text-center sm:text-left py-6 md:py-0">
                                 <div>
                                     <h1 className="text-3xl font-extrabold pb-4">연락하기</h1>
-                                    <p className="mt-3">안녕하세요! 저는 프론트엔드 개발에 대한 관심이 많습니다. 만약 질문이 있으시거나, 연락을 원하신다면 연락 부탁드립니다.</p>
+                                    <p className="mt-3">안녕하세요. 개발자 우예지 입니다. 채용을 원하시거나, 면접을 원하시는 경우 메일을 작성해주시면 감사하겠습니다. 어디서든 제 몫을 톡톡히 하는 사람이고 싶습니다. 즐거운 하루 되세요!</p>
                                     <hr className="mt-3 border-gray-300" />
                                 </div>
                                 <div className="divide-y divide-gray-200">

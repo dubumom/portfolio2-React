@@ -4,39 +4,39 @@ $(function () {
 
   function imageProgress(){
     let $container = $('.progress'),
-        $bar = $container.find('.bar'),
-        $text = $container.find('.rate'),
-        $imgload = imagesLoaded('body'),
-        $imgTotal = $imgload.images.length,
-        $imgLoaded = 0,
-        $current = 0,
-        $progressTimer = setInterval(updateProgress, 1000/60);
+      $bar = $container.find('.bar'),
+      $text = $container.find('.rate'),
+      $imgload = imagesLoaded('body'),
+      $imgTotal = $imgload.images.length,
+      $imgLoaded = 0,
+      $current = 0,
+      $progressTimer = setInterval(updateProgress, 1000/60);
 
-        //이미지 로드 될때 마다 할일(진행중 할일)
-        $imgload.on('progress',()=>{
-          $imgLoaded++;
-        });
+      //이미지 로드 될때 마다 할일(진행중 할일)
+      $imgload.on('progress',()=>{
+        $imgLoaded++;
+      });
 
-        function updateProgress(){
-          //로드완료한 이미지의 비율
-          let $target = ($imgLoaded/$imgTotal) * 100;
-          $current += ($target - $current)*0.1;
+      function updateProgress(){
+        //로드완료한 이미지의 비율
+        let $target = ($imgLoaded/$imgTotal) * 100;
+        $current += ($target - $current)*0.1;
 
-          $bar.css({width:$current+'%'});
-          $text.text(Math.ceil($current)+'%');
+        $bar.css({width:$current+'%'});
+        $text.text(Math.ceil($current)+'%');
 
-          if($current>99.9) {
-            $current = 100;
-          }
+        if($current>99.9) {
+          $current = 100;
+        }
 
-          if($current >= 100){
-            clearInterval($progressTimer);
-            $container.addClass('complete');
-            $container.animate({top:'-100%'}, 1000, 'easeInOutQuint');
-          }
+        if($current >= 100){
+          clearInterval($progressTimer);
+          $container.addClass('complete');
+          $container.animate({top:'-100%'}, 1000, 'easeInOutQuint');
+        }
 
-          
-        }//updateProgress
+        
+      }//updateProgress
   }
 
   //휠 애니메이션

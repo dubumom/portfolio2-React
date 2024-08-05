@@ -218,29 +218,6 @@ header > nav ul li a,
   -webkit-transition: all .35s ease-in-out;
   transition: all .35s ease-in-out;
 }
-/* header > nav ul li::after {
-  content: '';
-  display: inline-block;
-  position: absolute;
-  width: 0%;
-  height: 4px;
-  background-color: #0D47A1;
-  left: 0; bottom: 30px; transition: 0.3s;
-}
-header > nav ul li:hover:after{width: 100%;} */
-
-/* .underline {
-  line-height: 1.2;
-  background-image: linear-gradient(transparent 50%, rgba(118, 187, 43,0.5) 50%);
-  background-repeat: no-repeat;
-  background-size: 0% 100%;
-  transition: background-size 0.8s;
-  color: #000;
-  cursor: pointer;
-}
-.underline:hover {
-  background-size: 100% 100%;
-} */
 
 /* #profile*/
 
@@ -266,7 +243,7 @@ header > nav ul li:hover:after{width: 100%;} */
   background: url(./image/profile_img.png) no-repeat bottom;
 }
 .profile-img> div ul {margin-top: 30px; gap: 30px;}
-.portfolio-tit {padding: calc(var(--row) * 10) 0 calc(var(--row) * 3) 0;}
+.portfolio-tit {padding: calc(var(--row) * 7) 0 calc(var(--row) * 3) 0;}
 .portfolio-tit p {margin-top: var(--row);}
 
 /* protfile-chart */
@@ -321,7 +298,7 @@ circle{
 }
 .chart:hover::before {top: -130px; opacity: 1;}
 
-/* wheel 에니메이션 - 작업 중*/
+/* wheel 에니메이션 */
 .wheel-animation {position: relative;}
 
 .image-sequence {
@@ -474,9 +451,7 @@ figcaption{
     /* transform:translateY(-50%); */
   }
 }
-#project figure> img {
-  /* margin-left: 200px; */
-}
+
 #project nav{
   position: absolute;
   /* top: 47%; */

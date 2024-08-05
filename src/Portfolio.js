@@ -63,7 +63,14 @@ function Portfolio() {
         </aside>
         <div className="portfolio-tit">
           <h2 className="tit-h1">안녕하세요<br/><em className="bnr-tit">웹 프론트엔드 개발자 <br /> <strong className="medium-blue">우예지</strong>입니다.</em></h2>
-          <p>"최신 기술을 빠르게 습득하고 창의적인 해결책을 통해 사용자 경험을 극대화 하는 <br /> 프론트엔드 개발자가 되겠습니다."</p>
+          <p>"최신 기술을 빠르게 습득하고 창의적인 해결책을 통해 사용자 경험을 극대화 하는 <br /> 웹 퍼블리셔 및 프론트엔드 개발자가 되겠습니다."
+            <br/>
+            <br/>
+            git, notion, slack, figma를 능숙하게 사용하며, 구글 지도, 달력 API 뿐만 아니라 각종 라이브러리 사용에 능통합니다.
+            <br/>  
+            <br/>  
+            저는 함께하는 즐거움과 소통의 중요성을 깊이 이해하고, 이를 통해 팀의 목표를 효과적으로 달성하는 인재입니다. <br/>원활한 소통을 바탕으로 신뢰를 쌓고, 협력을 통해 성장을 이루어 나가겠습니다.
+          </p>
         </div>
         <a href="./image/resume.png" className="button" data-btn="이력서 바로가기" target="_blank" rel="noreferrer" aria-label="이력서"></a>
         <div className="charts">

@@ -54,7 +54,7 @@ function Project() {
               <figcaption>
                 <h2 className="tit-h1">르세라핌 리뉴얼 페이지</h2>
                 <p>개인 프로젝트(기획 ~ 구현)</p>
-                <p>바닐라 자바스크립트로 페이지 구현하였고, 구글 달력 API를 연동하였습니다.</p>
+                <p>바닐라 자바스크립트로 페이지 구현하였고,<br/> 구글 달력 API를 연동하였습니다.</p>
                 <a href="https://lesserafimpage.netlify.app/" className="button" data-btn="web site 바로가기" target="_blank" rel="noreferrer" aria-label="More lesserafim"></a>
               </figcaption>
             </figure>

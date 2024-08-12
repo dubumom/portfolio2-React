@@ -282,6 +282,7 @@ circle{
 .chart::after{
   content: attr(data-title);
   position: absolute; left: 50%; bottom: -30px; transform: translateX(-50%);
+  z-index: 1;
 }
 .chart::before {
   content: attr(data-desc);
